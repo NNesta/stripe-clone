@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply flex items-center gap-2 bg-white bg-opacity-50 p-2 rounded-3xl
+}
+canvas {
+    width: 4000PX;
+    height: 1500px;
+    clip-path: polygon(0 0, 0 35%, 86% 0);
+
+  }
+  .-skew-y-5 {
+    --tw-skew-y: -5deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+  .skew-y-5 {
+    --tw-skew-y: 5deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+  .-skew-y-9 {
+    --tw-skew-y: -5deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
