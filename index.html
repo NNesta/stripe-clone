@@ -7,20 +7,20 @@
   <script src="/src/canvas.js"></script>
 </head>
 <body class="relative mx-auto overflow-x-hidden">
-  <div class="absolute inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px] border-dashed border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] z-[100]">
-<div class="h-full"></div>
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256] ">
+<div class="h-full "></div>
 <div class="h-full"></div>
 <div class="h-full"></div>
 <div class="h-full"></div>
   </div>
-  <div class="absolute top-0 left-0 w-full h-[800px] z-20">
+  <div class="absolute top-0 left-0 w-full h-[800px] -z-10">
     
-  <canvas id="canv" width="32" height="32"></canvas>
+  <canvas class="clip-path-myheader w-[5000px] lg:h-[1000px] xl:h-[1500px] 2xl:h-[2500px]" id="canv" width="32" height="32"></canvas>
   </div>
-  <main class="relative mx-auto h-full w-[1280px] container max-w-[80%] p-4 z-30">
+  <!-- <main class="relative mx-auto h-full w-[1280px] container max-w-[80%] p-4 z-30"> -->
   
-    <header class="z-50">
-<nav class="pt-4 flex justify-between mx-auto text-white  items-center ">
+    <header class="z-50 w-[1280px] container max-w-[80%] py-2 mx-auto">
+<nav class="pt-4 flex justify-between mx-auto text-white  items-center z-50">
   <h1 class="text-2xl font-semibold">Stripe</h1>
   <ul class="flex items-center gap-8">
     <li><a href="google.com">Products</a></li>
@@ -29,24 +29,29 @@
     <li><a href="/">Resources</a></li>
     <li><a href="/">Pricing</a></li>
   </ul>
-<button class="btn">
+<button class="btn group bg-opacity-50">
   <span>Sign in</span>
-  <img src="/images/chevron-right.svg" alt="">
+  <img class="group-hover:hidden block" src="/images/chevron-right.svg" alt="">
+  <img class="hidden group-hover:block" src="/images/arrow-right (2).svg" alt="">
 </button>
 </nav>
 </header>
-<div class="grid grid-cols-5 mt-32">
-  <div class="col-span-3 flex flex-col gap-8 z-20">
-    <h1 class="text-8xl font-bold leading-[8rem] tracking-tighter">Financial infrastructure for the internet</h1>
-    <p>Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
-    <div class="flex items-center gap-8">
-      <button class="btn">
+<div class="grid grid-cols-5 mt-32 w-[1280px] max-w-[80%] mx-auto gap-12">
+  <div class="col-span-3 flex flex-col gap-16 z-20">
+    <h1 class="text-8xl font-bold leading-[6rem] tracking-tighter  text-titleColor-2 max-w-lg whitespace-pre 2xl:pt-16 lg:pt-0">Financial
+infrastructure
+for the internet</h1>
+    <p class="text-textColor max-w-[30rem] text-lg mx-6">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
+    <div class="mx-6 flex items-center gap-8">
+      <button class=" text-white bg-dark hover:bg-opacity-50 group btn">
         <span>Start now</span>
-        <img src="/images/chevron-right.svg" alt="">
+        <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+  <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
       </button>
-      <button class="btn">
+      <button class="btn text-dark hover:text-opacity-40 group">
         <span>Contact sales</span>
-        <img src="/images/chevron-right.svg" alt="">
+        <img class="group-hover:hidden block text-dark" src="/images/chevron-right.svg" alt="">
+        <img class="hidden group-hover:block text-dark" src="/images/arrow-right (2).svg" alt="">
       </button>
     </div>
   </div>
@@ -97,8 +102,8 @@
   
 </div>
 </div>
-<div class="grid grid-cols-4 grid-rows-2 gap-9 bg-transparent -z-[100] py-24 ">
-  <img class="object-cover h-10" src="/images/insta-removebg-preview.png" alt="">
+<div class="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-9 bg-transparent -z-[100] py-24 w-[1280px] max-w-[80%] mx-auto justify-items-center">
+  <img class="object-cover h-10 " src="/images/insta-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/sales-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/amazon-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/slack-removebg-preview.png" alt="">
@@ -107,27 +112,50 @@
   <img class="object-cover h-10" src="/images/lyf-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/zoom-removebg-preview.png" alt="">
 </div>
-<div>
-<div class="grid grid-cols-2">
-  <div class="flex flex-col gap-8">
-    <h1 class="text-accentColor">Unified platform</h1>
-    <p class="text-4xl text-titleColor">A fully integrated suite of payments products</p>
+<div class="bg-gray-100 h-[1300px] -z-30">
+<div class="bg-gray-100 z-10 w-full">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto w-[1280px] container max-w-[80%]">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
+<div class="w-[1280px] max-w-[80%] mx-auto ">
+  
+<div class="grid grid-cols-2 gap-8 mx-6 z-20">
+  <div class="flex flex-col gap-8 items-start my-8">
+    <h1 class="text-accentColor text-[1.1rem] font-bold">Unified platform</h1>
+    <p class="text-4xl text-titleColor font-bold">A fully integrated suite of payments products</p>
     <p>
 We bring together everything that’s required to build
 websites and apps that accept payments and send payouts
 globally. Stripe’s products power payments for <a href=""> online and in-
 person retailers, subscriptions businesses, software 
 platforms and marketplaces</a>, and everything in between.</p>
-        <button class="btn">
-          <span>Starts with payments</span>
-          <img src="/images/chevron-right.svg" alt="">
-        </button>
+
+        
   </div>
 <div></div>
 </div>
-<div class="grid grid-cols-3 gap-4 w-full max-w-[80%] mx-auto -translate-x-24">
+<div class="grid grid-cols-12 grid-rows-9 gap-4 justify-end">
+  <div class="col-span-9"><button class=" text-white bg-accentColor hover:bg-dark font-semibold group btn">
+  <span>Starts with payments</span>
+  <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+<img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+</button></div>
+  <div class="col-span-3 row-span-4 bg-red-500"><img class="object-cover" src="/images/phone-removebg-preview.png" alt="">
+  </div>
+  <div class="col-span-3 row-span-2"><img class="" src="/images/visa-card-removebg-preview.png" alt=""></div>
+  <div class="col-span-6 row-span-3"><img class="shadow-md" src="/images/slack-2.PNG" alt="">
+  </div>
+  <div class="col-span-3 row-span-5"><img class="h-[500px] object-contain" src="/images/parker-removebg-preview.png" alt="">
+  </div>
+  <div class="col-span-9 row-span-5">      <img class="object-contain" src="/images/radar-fraud-visual-home-en-us.png" alt="">
+  </div>
+</div>
+<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full max-w-[80%] mx-auto -translate-x-24">
   <div class="flex flex-col gap-8 items-end">
-<img src="/images/visa-card-removebg-preview.png" alt="">
+<img class="" src="/images/visa-card-removebg-preview.png" alt="">
 <img class="h-[500px] object-contain" src="/images/parker-removebg-preview.png" alt="">
   </div>
   <div class="col-span-2 flex flex-col">
@@ -140,38 +168,54 @@ platforms and marketplaces</a>, and everything in between.</p>
       <img class="object-cover" src="/images/radar-fraud-visual-home-en-us.png" alt="">
     </div>
   </div>
+</div> -->
 </div>
 </div>
+</div>
+ <!-- </main> -->
 
-
-</div>
- </main>
- <div class="h-[1100px] bg-white">
- <div class="bg-backgroundColorDark h-[1100px] w-full mx-auto -skew-y-5 -translate-y-20 z-40 absolute">
+ <div class="bg-backgroundColorDark h-[1100px] w-full mx-auto -skew-y-5 -translate-y-20 z-50 ">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto w-[1280px] container max-w-[80%]">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
   <div class="translate-y-48 w-[1280px] h-full max-w-[80%] mx-auto skew-y-5 grid grid-cols-2">
     <div class="flex flex-col gap-8 items-start">
-      <div class="flex flex-col gap-4 items-start">
-      <h3 class="text-accentColor text-[1.2rem]">Designed for developers</h3>
-      <h1 class="text-4xl text-white font-bold">
+      <div class="flex flex-col gap-4 items-start mx-6">
+      <h3 class="text-accentTeal text-[1.2rem] font-semibold">Designed for developers</h3>
+      <h1 class="text-4xl text-white font-bold leading-[3rem]">
         The world’s most powerful and easy-to-use APIs
       </h1>
-      <p class="text-gray-400">We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.</p>
-      <button class="btn bg-accentColor">Read the docs</button>
+      <p class="text-gray-400 text-lg">We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.</p>
+      <button class=" text-dark font-semibold bg-accentTeal hover:bg-white hover:bg-opacity-50 group btn">
+        <span>Read the docs</span>
+        <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+  <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+      </button>
     </div>
       <div class="grid grid-cols-2">
-        <div class="flex flex-col gap-2 items-start">
-          <img class="object-contain h-[40px] w-[96px]" src="/images/libraries-removebg-preview.png" alt="">
-          <p class="text-2xl text-white">Tools for every stack</p>
-          <p class="text-gray-400">We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
-          <button class="text-accentColor"><span>See libraries</span>
-             </button>
+        <div class="flex flex-col gap-3 items-start">
+          <img class="object-contain h-14 pl-4" src="/images/libraries-removebg-preview.png" alt="">
+          <p class="text-lg text-white font-semibold pl-4 border-l border-accentTeal">Tools for every stack</p>
+          <p class="text-gray-300 pl-4 max-w-[95%]">We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
+         
+             <button class="text-accentTeal font-semibold pl-4 bg-transparent  hover:text-white group btn">
+              <span>See libraries</span>
+              <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+        <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+            </button>
         </div>
-        <div class="flex flex-col gap-2 items-start">
-          <img class="object-contain h-[40px] w-[96px]" src="/images/partners-removebg-preview.png" alt="">
-          <p class="text-2xl text-white">Prebuilt integrations</p>
-          <p class="text-gray-400">Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.</p>
-          <button class="text-accentColor"><span>See libraries</span>
-             </button>
+        <div class="flex flex-col gap-3 items-start">
+          <img class="object-contain h-14  pl-4" src="/images/partners-removebg-preview.png" alt="">
+          <p class="text-lg text-white font-semibold pl-4 border-l border-accentTeal">Prebuilt integrations</p>
+          <p class="text-gray-300 pl-4 max-w-[95%]">Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.</p>
+          <button class="text-accentTeal font-semibold pl-4 bg-transparent  hover:text-white group btn">
+            <span>Explore partners</span>
+            <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+      <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+          </button>
         </div>
       </div>
     </div>
@@ -180,9 +224,15 @@ platforms and marketplaces</a>, and everything in between.</p>
     </div>
   </div>
  </div>
-  </div> 
+  
  <div class="h-[900px] bg-white">
  <div class="bg-white h-[900px] w-full mx-auto -skew-y-5 -translate-y-20 z-40 absolute ">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256]  ">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
   <div class="absolute w-full h-8 bg-[#80e9ff] top-0 left-[60%]  "></div>
   <div class="absolute w-48 h-2 bg-[#0048e5] top-6 left-[62%]  ">
 
@@ -197,29 +247,30 @@ platforms and marketplaces</a>, and everything in between.</p>
   <div class="absolute w-48 h-8 bg-[#80e9ff] bottom-[1.9rem] right-[62%]  ">
 
   </div>
-  <div class="translate-y-48 container w-[1280px] skew-y-5 h-[800px] flex flex-col gap-8 max-w-[80%] mx-auto">
-   <h3 class="text-[#7a73ff]">Why Stripe?</h3>
-   <h1 class="text-titleColor text-4xl">A technology-first approach to payments and finance</h1>
-   <div class="grid grid-cols-4 gap-4 mx-auto">
-    <div class="flex flex-col gap-4 items-start max-w-[90%]">
-      <img src="/images/stripe-1-removebg-preview.png" alt="" class="h-4 object-contain">
-      <h3 class="text-titleColor text-base">Close to the metal</h3>
-      <p>From <a href="" class="text-[#7a73ff]">direct integrations</a>  with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.</p>
+  <div class="translate-y-48 container w-[1280px] skew-y-5 h-[800px] flex flex-col gap-8 max-w-[80%] mx-auto bg-transparent z-50 ">
+    
+   <h3 class="text-[#7a73ff] font-bold pl-4">Why Stripe?</h3>
+   <h1 class="text-titleColor text-4xl font-bold max-w-[80%] leading-[3rem] pl-4">A technology-first approach to payments and finance</h1>
+   <div class="grid grid-cols-4 mx-auto">
+    <div class="flex flex-col gap-4 items-start ">
+      <img src="/images/stripe-1-removebg-preview.png" alt="" class="h-16 object-contain pl-4 ">
+      <h3 class="text-titleColor text-base font-semibold border-l border-accentColor pl-4">Close to the metal</h3>
+      <p class="pl-4">From <a href="" class="text-[#7a73ff] font-medium">direct integrations</a>  with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack.</p>
     </div>
-    <div class="flex flex-col gap-4 items-start max-w-[90%]">
-      <img src="/images/stripe-2-removebg-preview.png" alt="" class="h-4 object-contain">
-      <h3 class="text-titleColor text-base">Fastest-improving platform</h3>
-      <p>We release <a href="" class="text-[#7a73ff]">hundreds of features</a>  and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)</p>
+    <div class="flex flex-col gap-4 items-start">
+      <img src="/images/stripe-2-removebg-preview.png" alt="" class="h-16 object-contain pl-4">
+      <h3 class="text-titleColor text-base font-semibold border-l border-accentColor pl-4">Fastest-improving platform</h3>
+      <p class="pl-4">We release <a href="" class="text-[#7a73ff] font-medium">hundreds of features</a>  and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.)</p>
     </div>
-    <div class="flex flex-col gap-4 items-start max-w-[90%]">
-      <img src="/images/stripe-3-removebg-preview.png" alt="" class="h-4 object-contain">
-      <h3 class="text-titleColor text-base">Battle-tested reliability</h3>
-      <p>Our systems operate with  <a href="" class="text-[#7a73ff]">99.99%+</a> uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
+    <div class="flex flex-col gap-4 items-start">
+      <img src="/images/stripe-3-removebg-preview.png" alt="" class="h-16 object-contain pl-4">
+      <h3 class="text-titleColor text-base font-semibold border-l border-accentColor pl-4">Battle-tested reliability</h3>
+      <p class="pl-4">Our systems operate with  <a href="" class="text-[#7a73ff] font-medium">99.99%+</a> uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards.</p>
     </div>
-    <div class="flex flex-col gap-4 items-start max-w-[90%]">
-      <img src="/images/stripe-4-removebg-preview.png" alt="" class="h-4 object-contain">
-      <h3 class="text-titleColor text-base">Intelligent optimizations</h3>
-      <p>Our machine learning models train on <a href="" class="text-[#7a73ff]">billions </a>   of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
+    <div class="flex flex-col gap-4 items-start">
+      <img src="/images/stripe-4-removebg-preview.png" alt="" class="h-16 object-contain pl-4">
+      <h3 class="text-titleColor text-base font-semibold border-l border-accentColor pl-4">Intelligent optimizations</h3>
+      <p class="pl-4">Our machine learning models train on <a href="" class="text-[#7a73ff] font-medium">billions </a>   of data points and help increase revenue across conversion, fraud, revenue recovery, and more.</p>
     </div>
 
    </div>
@@ -227,49 +278,217 @@ platforms and marketplaces</a>, and everything in between.</p>
   </div>
  </div>
   </div> 
- <div class="">
- <div class="bg-backgroundColorDark h-[1200px] w-full mx-auto -translate-y-[50rem] z-30 relative">
+ <div class="bg-backgroundColorDark h-[1350px] w-full mx-auto -translate-y-[50rem] z-30 relative">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256]  ">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
    <img class="object-cover h-full w-full absolute " src="/images/earth.png" alt="">
-   <div class="translate-y-[50rem] h-full mx-auto w-[1280px]">
+   <div class="translate-y-[50rem]  mx-auto w-[1280px] max-w-[80%]">
 
      <div class="grid grid-cols-2 ">
-       <div class="flex flex-col gap-4">
-         <h3 class="text-[#80e9ff]">Global scale</h3>
-         <h1 class="text-white text-4xl">The backbone for internet business</h1>
-         <p class="text-gray-200">
+       <div class="flex flex-col gap-6">
+         <h3 class="text-accentTeal text-lg font-semibold">Global scale</h3>
+         <h1 class="text-white text-4xl max-w-[60%] font-bold">The backbone for internet business</h1>
+         <p class="text-gray-400 text-lg max-w-[82%] font-medium">
            For ambitious companies around the world, Stripe makes moving money as simple, borderless,
            and programmable as the rest of the internet. Our teams are based in dozens of offices around
-           the world and we process hundreds of billions of dollars each year for <a href="/" class="text-[#80e9ff]">startups to Fortune 500s.</a>
+           the world and we process hundreds of billions of dollars each year for <a href="/" class="text-accentTeal hover:text-black font-semibold">startups to Fortune 500s.</a>
           </p>
         </div>
       </div>
       <div class="grid grid-cols-4 pt-16">
         <div class="flex flex-col gap-4 cursor-pointer">
-          <h4 class="text-white font-semibold">250M+</h4>
-          <p class="text-gray-200">API requests per day peaking at 13,000 requests a second</p>
+          <h4 class="text-white text-2xl font-bold pl-4 border-l border-accentTeal">250M+</h4>
+          <p class="text-gray-400 pl-4 font-medium">API requests per day peaking at 13,000 requests a second</p>
         </div>
         <div class="flex flex-col gap-4 cursor-pointer">
-          <h4 class="text-white font-semibold">250M+</h4>
-          <p class="text-gray-200">API requests per day peaking at 13,000 requests a second</p>
+          <h4 class="text-white text-2xl font-bold pl-4 border-l border-accentTeal">250M+</h4>
+          <p class="text-gray-400 pl-4 font-medium">API requests per day peaking at 13,000 requests a second</p>
         </div>
         <div class="flex flex-col gap-4 cursor-pointer">
-          <h4 class="text-white font-semibold">250M+</h4>
-          <p class="text-gray-200">API requests per day peaking at 13,000 requests a second</p>
+          <h4 class="text-white text-2xl font-bold pl-4 border-l border-accentTeal">250M+</h4>
+          <p class="text-gray-400 pl-4 font-medium">API requests per day peaking at 13,000 requests a second</p>
         </div>
         <div class="flex flex-col gap-4 cursor-pointer">
-          <h4 class="text-white font-semibold">250M+</h4>
-          <p class="text-gray-200">API requests per day peaking at 13,000 requests a second</p>
+          <h4 class="text-white text-2xl font-bold pl-4 border-l border-accentTeal">250M+</h4>
+          <p class="text-gray-400 pl-4 font-medium">API requests per day peaking at 13,000 requests a second</p>
         </div>
         
       </div>
     </div>
-    </div>
+  
   </div> 
-  <div class="grid grid-cols-4">
-    <div class="flex flex-col">
+  <div class=" relative -skew-y-5 z-20 h-[500px] w-full -mt-[40rem] inset-0 bg-white">
+    <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256]  ">
+      <div class="h-full "></div>
+      <div class="h-full"></div>
+      <div class="h-full"></div>
+      <div class="h-full"></div>
+        </div>
+  <div class="grid grid-cols-4 w-[1280px] max-w-[80%] mx-auto z-30 px-4 skew-y-5">
+    
+    <div class="flex flex-col col-span-2 max-w-[90%] items-start gap-4">
+      <h1 class="text-titleColor text-2xl font-bold ">Ready to get started?</h1>
+      <p class="text-lg text-textColor">Explore <a href="" class="text-[#7a73ff] font-medium">Stripe Payments</a> , or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business.</p>
+      <div class="flex gap-4">
+        <button class="text-white font-semibold pl-4 bg-accentColor  hover:bg-dark group btn">
+          <span>Start now</span>
+          <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+    <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+        </button>
+        <button class="text-[#7173ff] font-semibold pl-4 bg-transparent  hover:text-dark group btn">
+          <span>Contact sales</span>
+          <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+    <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+        </button>
+        
+      </div>
       
     </div>
+    <div class="flex flex-col gap-4 max-w-[90%] items-start">
+      <img class="h-16 object-contain pl-4" src="/images/details-removebg-preview.png" alt="">
+      <h1 class="text-titleColor text-base pl-4 font-semibold border-l border-accentColor">Always know what you pay</h1>
+      <p class="text-base pl-4">Integrated per-transaction pricing with no hidden fees.</p>
+      <button class="text-[#7173ff] font-semibold pl-4 bg-transparent  hover:text-dark group btn">
+        <span>Pricing details</span>
+        <img class="group-hover:hidden block text-white pl-4" src="/images/chevron-right.svg" alt="">
+  <img class="hidden group-hover:block text-white pl-4" src="/images/arrow-right (2).svg" alt="">
+      </button>
+    </div>
+    <div class="flex flex-col gap-4 max-w-[98%] items-start">
+      <img class="h-16 object-contain pl-4" src="/images/reference-removebg-preview.png" alt="">
+      <h1 class="text-titleColor text-base pl-4 font-semibold border-l border-accentColor">Start your integration</h1>
+      <p class="text-base pl-4">Get up and running with Stripe in as little as 10 minutes.</p>
+      <button class="text-[#7173ff] font-semibold pl-4 bg-transparent  hover:text-dark group btn">
+        <span>API references</span>
+        <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
+  <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+      </button>
+    </div>
   </div>
+  <div class="absolute w-full h-8 bg-[#80e9ff] bottom-0 md:left-[90%] lg:left-[85%]  2xl:left-[60%]"></div>
+    <div class="absolute w-48 h-4 bg-[#0048e5] bottom-6 left-[62%]  ">
+  
+    </div>
+    <div class="absolute w-48 h-8 bg-[#7a73ff] bottom-[1.9rem] left-[62%]  ">
+  
+    </div>
+    <div class="absolute w-full h-8 bg-[#7a73ff] bottom-0 right-[60%]  "></div>
+    <div class="absolute w-48 h-4 bg-[#0048e5] bottom-6 right-[62%]  ">
+  
+    </div>
+    <div class="absolute w-48 h-8 bg-[#80e9ff] bottom-[1.9rem] right-[62%]  ">
+  
+    </div>
+  </div>
+<footer class="relative w-full z-10 bg-gray-100 pt-96 -mt-64 pb-8 text-dark">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256]  ">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
+  <div class="grid grid-cols-4 w-[1280px] max-w-[80%] mx-auto h-full z-50 bg-transparent my-8 px-4">
+    <div class="flex flex-col justify-between">
+      <div class="flex flex-col gap-4">
+        <h1 class="text-2xl font-extrabold ">Stripe</h1>
+        <div class="flex gap-2">
+          <img class="h-6 object-cover" src="/images/us-removebg-preview.png" alt="">
+          <p>United States</p>
+        </div>
+        <div class="flex gap-2">
+          <img class="h-6 object-cover" src="/images/message-removebg-preview.png" alt="">
+          <p>English(United States)</p>
+        </div>
+      </div>
+      <h1>© 2022 Stripe, Inc.</h1>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h1 class="font-medium">Products</h1>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href=""></a>Atlas</li>
+        <li><a class="hover:text-gray-400 transition duration-300" href=""></a>Billing</li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Capital</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Checkout</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Climate</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Connect</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Corporate Card</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Data Pipeline</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Elements</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Financial Connections</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Identity</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Invoicing</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Issuing</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Link</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Payments</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Payment Links</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Payouts</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Pricing</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Radar</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Revenue Recognition</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Sigma</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Tax</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Terminal</a></li>
+<li><a class="hover:text-gray-400 transition duration-300" href="">Treasury</a></li>
+</ul>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h4 class="font-medium">Use Cases</h4>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Ecommerce</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">SaaS</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Marketplaces</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Embedded Finance</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Platforms</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Creator Economy</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Crypto</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Global Businesses</a></li>
+      </ul>
+      <h4 class="font-semibold">Integrations & Custom Solutions</h4>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">App Marketplace</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Partner Ecosystem</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Professional Services</a></li>
+        
+      </ul>
+      <h4 class="font-semibold">Developers</h4>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Documentation</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">API Reference</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">API Status</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">API Changelog</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Build a Stripe App</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h1 class="font-semibold">Resources</h1>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Support Center</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Support Plans</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Guides</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Customer Stories</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Blog</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Annual Conference</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Privacy & Terms</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Licenses</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">COVID-19</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Sitemap</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Cookie settings</a></li>
+      </ul>
+      <h1 class="font-semibold">Company</h1>
+      <ul>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Jobs</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Newsroom</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Stripe Press</a></li>
+        <li><a class="hover:text-gray-400 transition duration-300" href="">Become a Partner</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</footer>
   <script>
     var c = document.getElementById('canv');
     var $ = c.getContext('2d');
