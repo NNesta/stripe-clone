@@ -6,21 +6,23 @@
   <link href="/dist/output.css" rel="stylesheet">
   <script src="/src/canvas.js"></script>
 </head>
-<body class="relative mx-auto overflow-x-hidden">
-  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full w-[1280px] container max-w-[80%] gap-[256] ">
+<body class="relative mx-auto overflow-x-hidden w-full">
+  <!-- <div class="absolute -z-50 inset-0 md:grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto h-full lg:w-[1280px] container max-w-[80%] gap-[256] ">
 <div class="h-full "></div>
 <div class="h-full"></div>
 <div class="h-full"></div>
 <div class="h-full"></div>
-  </div>
-  <div class="absolute top-0 left-0 w-full h-[800px] -z-10">
+  </div> -->
+  <div class="absolute top-0 left-0 w-full h-[800px] -z-10 bg-red-600">
     
-  <canvas class="clip-path-myheader w-[5000px] lg:h-[1000px] xl:h-[1500px] 2xl:h-[2500px]" id="canv" width="32" height="32"></canvas>
+  <canvas class=" w-full h-[800px] " id="canv" width="32" height="32"></canvas>
+  <!-- <canvas class="clip-path-myheader w-[5000px] lg:h-[1000px] xl:h-[1500px] 2xl:h-[2500px]" id="canv" width="32" height="32"></canvas> -->
   </div>
   <!-- <main class="relative mx-auto h-full w-[1280px] container max-w-[80%] p-4 z-30"> -->
   
     <header class="z-50 w-[1280px] container max-w-[80%] py-2 mx-auto">
-<nav class="pt-4 flex justify-between mx-auto text-white  items-center z-50">
+      <!-- Desktop Navbar -->
+<nav class="hidden md:flex pt-4 justify-between mx-auto text-white  items-center z-50">
   <h1 class="text-2xl font-semibold">Stripe</h1>
   <ul class="flex items-center gap-8">
     <li><a href="google.com">Products</a></li>
@@ -35,18 +37,37 @@
   <img class="hidden group-hover:block" src="/images/arrow-right (2).svg" alt="">
 </button>
 </nav>
+<!-- Mobile Navbar -->
+<nav class="flex md:hidden pt-4 justify-between mx-auto text-white  items-center z-50">
+  <h1 class="text-2xl font-semibold">Stripe</h1>
+  
+<button class=" bg-white bg-opacity-50 p-4">
+  <img class="h-16" src="/images/arrow-right (2).svg" alt="">
+</button>
+</nav>
 </header>
-<div class="grid grid-cols-5 mt-32 w-[1280px] max-w-[80%] mx-auto gap-12">
+<div class="-skew-y-12 bg-white h-[1010px] z-40 relative w-screen">
+  <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto w-[1280px] container max-w-[80%]">
+    <div class="h-full "></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+    <div class="h-full"></div>
+      </div>
+<div class="skew-y-12 grid grid-cols-5 mt-64 w-[1280px] max-w-[80%] mx-auto gap-12 -translate-y-32">
   <div class="col-span-3 flex flex-col gap-16 z-20">
-    <h1 class="text-8xl font-bold leading-[6rem] tracking-tighter  text-titleColor-2 max-w-lg whitespace-pre 2xl:pt-16 lg:pt-0">Financial
+    <h1 class="text-8xl font-bold leading-[6rem] tracking-tighter max-w-full  text-titleColor-2 whitespace-pre 2xl:pt-16 lg:pt-0">Financial
 infrastructure
 for the internet</h1>
     <p class="text-textColor max-w-[30rem] text-lg mx-6">Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.</p>
     <div class="mx-6 flex items-center gap-8">
       <button class=" text-white bg-dark hover:bg-opacity-50 group btn">
         <span>Start now</span>
-        <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
-  <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-3 h-3 group-hover:hidden block">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="hidden group-hover:block w-3 h-3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
       </button>
       <button class="btn text-dark hover:text-opacity-40 group">
         <span>Contact sales</span>
@@ -54,8 +75,9 @@ for the internet</h1>
         <img class="hidden group-hover:block text-dark" src="/images/arrow-right (2).svg" alt="">
       </button>
     </div>
+    
   </div>
-  <div class="col-span-2 h-fit relative text-sm z-20">
+  <div class="col-span-2 h-fit relative text-sm z-20 hidden md:block">
     <div class="bg-white flex flex-col gap-2 items-center rounded-lg h-fit w-[264px] shadow-md py-8 px-4 z-50">
    <img class="h-20" src="/images/cloud-removebg-preview.png" alt="" srcset="">
    <h3>Increment Magazine</h3>
@@ -102,7 +124,8 @@ for the internet</h1>
   
 </div>
 </div>
-<div class="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-9 bg-transparent -z-[100] py-24 w-[1280px] max-w-[80%] mx-auto justify-items-center">
+<div class="skew-y-12 w-full">
+<div class=" grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-9 bg-transparent relative z-[100] py-24 w-[1280px] max-w-[80%] mx-auto justify-items-center">
   <img class="object-cover h-10 " src="/images/insta-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/sales-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/amazon-removebg-preview.png" alt="">
@@ -111,21 +134,23 @@ for the internet</h1>
   <img class="object-cover h-10" src="/images/google-removebg-preview (1).png" alt="">
   <img class="object-cover h-10" src="/images/lyf-removebg-preview.png" alt="">
   <img class="object-cover h-10" src="/images/zoom-removebg-preview.png" alt="">
+</div></div>
 </div>
-<div class="bg-gray-100 h-[1300px] -z-30">
-<div class="bg-gray-100 z-10 w-full">
+
+<div class="bg-gray-100 relative h-[1300px] z-50">
   <div class="absolute -z-50 inset-0 grid grid-cols-4 divide-dashed divide-gray-400 divide-x-[1px]  border-x-[1px] border-gray-400 border-opacity-25 divide-opacity-25 mx-auto w-[1280px] container max-w-[80%]">
     <div class="h-full "></div>
     <div class="h-full"></div>
     <div class="h-full"></div>
     <div class="h-full"></div>
       </div>
-<div class="w-[1280px] max-w-[80%] mx-auto ">
+<div class=" z-50 w-full absolute inset-0">
+<div class="w-[1280px] max-w-[80%] mx-auto z-50">
   
-<div class="grid grid-cols-2 gap-8 mx-6 z-20">
+<div class="grid grid-cols-2 gap-8 mx-6 z-20 relative items-center">
   <div class="flex flex-col gap-8 items-start my-8">
     <h1 class="text-accentColor text-[1.1rem] font-bold">Unified platform</h1>
-    <p class="text-4xl text-titleColor font-bold">A fully integrated suite of payments products</p>
+    <p class="text-4xl text-titleColor font-bold ">A fully integrated suite of payments products</p>
     <p>
 We bring together everything that’s required to build
 websites and apps that accept payments and send payouts
@@ -135,15 +160,23 @@ platforms and marketplaces</a>, and everything in between.</p>
 
         
   </div>
+  <p class="max-w-[80%]">We also help companies 
+    <a class="text-accentColor hover:text-black font-semibold" href="">beat fraud, send invoices,</a> <a class="text-accentColor hover:text-black font-semibold" href="">issue virtual and physical cards,</a> <a class="text-accentColor hover:text-black font-semibold" href="">reduce friction at checkout,</a> <a class="text-accentColor hover:text-black font-semibold" href="">get financing,</a> <a href="">manage business spend, </a> and much more.
+  </p>
 <div></div>
 </div>
 <div class="grid grid-cols-12 grid-rows-9 gap-4 justify-end">
-  <div class="col-span-9"><button class=" text-white bg-accentColor hover:bg-dark font-semibold group btn">
+  <div class="col-span-9">
+    <button class=" text-white bg-accentColor hover:bg-dark font-semibold group btn ml-10">
   <span>Starts with payments</span>
-  <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
-<img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-3 h-3 group-hover:hidden block">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="hidden group-hover:block w-3 h-3">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+  </svg>
 </button></div>
-  <div class="col-span-3 row-span-4 bg-red-500"><img class="object-cover" src="/images/phone-removebg-preview.png" alt="">
+  <div class="col-span-3 row-span-4"><img class="object-fill" src="/images/phone-removebg-preview.png" alt="">
   </div>
   <div class="col-span-3 row-span-2"><img class="" src="/images/visa-card-removebg-preview.png" alt=""></div>
   <div class="col-span-6 row-span-3"><img class="shadow-md" src="/images/slack-2.PNG" alt="">
@@ -201,21 +234,29 @@ platforms and marketplaces</a>, and everything in between.</p>
           <p class="text-lg text-white font-semibold pl-4 border-l border-accentTeal">Tools for every stack</p>
           <p class="text-gray-300 pl-4 max-w-[95%]">We offer client and server libraries in everything from React and PHP to .NET and iOS.</p>
          
-             <button class="text-accentTeal font-semibold pl-4 bg-transparent  hover:text-white group btn">
+             <button class="text-accentTeal font-semibold bg-transparent  hover:text-white group btn flex items-center ml-4">
               <span>See libraries</span>
-              <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
-        <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-3 h-3 group-hover:hidden block stroke-accentTeal">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="hidden group-hover:block w-3 h-3 stroke-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
             </button>
         </div>
         <div class="flex flex-col gap-3 items-start">
           <img class="object-contain h-14  pl-4" src="/images/partners-removebg-preview.png" alt="">
           <p class="text-lg text-white font-semibold pl-4 border-l border-accentTeal">Prebuilt integrations</p>
           <p class="text-gray-300 pl-4 max-w-[95%]">Use integrations for systems like Shopify, WooCommerce, NetSuite, and more.</p>
-          <button class="text-accentTeal font-semibold pl-4 bg-transparent  hover:text-white group btn">
+          <button class="text-accentTeal font-semibold bg-transparent  hover:text-white group btn flex items-center ml-4">
             <span>Explore partners</span>
-            <img class="group-hover:hidden block text-white" src="/images/chevron-right.svg" alt="">
-      <img class="hidden group-hover:block text-white" src="/images/arrow-right (2).svg" alt="">
-          </button>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="w-3 h-3 group-hover:hidden block stroke-accentTeal pt-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"  class="hidden group-hover:block w-3 h-3 stroke-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+            </button>
         </div>
       </div>
     </div>
